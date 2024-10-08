@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    color: #444;
+    background-color: #98c2c2;
+    font: 300 18px/18px Roboto, sans-serif;
+    transition: background .4s ease-in-out 0s;
+  }
+  
+  .calendar {
+    width: 300px;
+    font-size: 100%;
+    margin: 50px auto 0;
+    perspective: 1000px;
+    cursor: default;
+    position: relative;
+  }
+  
+  .calendar .header {
+    height: 100px;
+    position: relative;
+    color: #fff;
+  }
+  
+  .calendar .header .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #308ff0;
+    padding: 15px;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    backface-visibility: hidden;
+    transition: .4s ease-in-out 0s;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .19), 0 8px 17px 0 rgba(0, 0, 0, .2);
+    opacity: 0;
+  }
+  
+  .calendar .header .text>span {
+    text-align: center;
+    padding: 26px;
+    display: block;
+  }
+  
+  .calendar .header.active .text {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  
+  /* More CSS... (same as you provided, you can copy that into this file) */
+  
